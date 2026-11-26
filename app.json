@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Scrapbook Scan",
+    "slug": "scrapbook-scan",
+    "scheme": "scrapbookscan",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.example.scrapbookscan",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.example.scrapbookscan",
+      "blockedPermissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Scrapbook Scan uses the camera to capture your scrapbook pages. Photos stay on your phone.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Scrapbook Scan saves the photos it cuts out of your scrapbook to your Photos.",
+          "savePhotosPermission": "Scrapbook Scan saves the photos it cuts out of your scrapbook to your Photos.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

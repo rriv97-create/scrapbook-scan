@@ -1,0 +1,4 @@
+{
+  "compilerOptions": { "outDir": "build", "rootDir": "../src/lib", "module": "nodenext", "moduleResolution": "nodenext", "target": "es2022", "strict": true, "skipLibCheck": true, "types": [] },
+  "files": ["../src/lib/detect.ts", "../src/lib/geometry.ts", "../src/lib/frame.ts", "../src/lib/quality.ts", "../src/lib/tilt.ts"]
+}
